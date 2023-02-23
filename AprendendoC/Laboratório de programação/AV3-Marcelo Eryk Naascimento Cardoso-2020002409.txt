@@ -1,0 +1,153 @@
+AV3-Marcelo Eryk Naascimento Cardoso-2020002409
+
+////////////////////////////// 1 ////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(){
+	
+	int b;
+
+    int A[6] = {1,0,5,-2,-5,7};
+    int a = A[0] + A[1] + A[5];
+    printf("Resultdo var a: %d", a);
+    A[4] = 100;
+
+    printf("\n\n\nValores do vetor A: ");
+    for(b=0;b<6;b++){
+        printf("\nA[%d]: %d", b, A[b]);
+    }
+	
+}
+
+///////////////////////////////// 2 /////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(){
+	
+	srand(time(NULL));
+    int b, x, y, soma;
+
+    int v[8];
+    printf("Valores de v[8] gerados aleatoriamente: ");
+    for(b=0;b<8;b++){
+        v[b] = rand()%100;
+        printf("\nv[%d] = %d", b, v[b]);
+    }
+
+    printf("\n\n\nQuais posicoes voce deseja somar? (0 - 7): ");
+    printf("\nPosicoes X: "); scanf("%d",&x);
+    printf("\nPosicoes Y: "); scanf("%d",&y);
+
+    soma = v[x] + v[y];
+    printf("\n\nSoma das posicoes %d e %d: %d\n\n\n", x, y, soma);
+	
+}
+
+///////////////////////////////////// 3 ////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(){
+
+    int a, b, d;
+    int v[10];
+
+    printf("Insira o valor de cada indice de v[10] sem repetir: ");
+    for(a=0;a<10;a++){
+            
+        printf("\nDigite o valor de v[%d]: ",a); scanf("%d",&d);
+        b=0;
+        while(b<9){
+            for(b=0;b<10;b++){
+                if(d==v[b]){
+                    printf("\n////////// ! ///////////\nValor ja colocado\nInsira outro valor: ");
+                    scanf("%d", &d);
+                    printf("\n");
+                    break;
+                }
+                else if(b==9){
+                    v[a]=d;
+                }
+            }
+        }
+    }
+    
+    printf("\n\n\nO vetor criado: ");
+    for (b=0;b<10;b++){
+        printf("\nv[%d]: %d",b,v[b]);
+    }
+
+    printf("\n\n\n");
+
+}
+
+/////////////////////////////////// 4 //////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+
+    int b,c=0,soma=0;
+    int v[6];
+
+    printf("Insira o valor de cada posicao do vator: ");
+    for(b=0;b<6;b++){
+        printf("\nv[%d]: ",b); scanf("%d",&v[b]);
+    }
+
+    printf("\n\nNumeros pares digitados: ");
+    for(b=0;b<6;b++){
+        if(v[b]%2==0){
+            printf("\nv[%d]: %d",b,v[b]);
+            soma = soma + v[b];
+        }
+    }
+    printf("\n\nSoma dos numeros pares digitados: %d",soma);
+
+    printf("\n\nNumeros impares digitados: ");
+    for(b=0;b<6;b++){
+        if(v[b]%2!=0){
+            printf("\nv[%d]: %d",b,v[b]);
+            c++;
+        }
+    }
+    printf("\n\nQuantidade de numeros impares: %d",c);	
+	
+}
+
+//////////////////////////////////// 5 ///////////////////////////////////////////////////////////////////
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int main(){
+    int a = 35;
+    int *ptr; ptr = &a;
+
+    printf("O ponteiro ptr armazena o endereco %p que,\npor sua vez, armazena o valor %d.\n", ptr, *ptr);
+
+    *ptr = 10;
+
+    printf("O ponteiro ptr armazena o endereco %p que,\npor sua vez, armazena o valor %d.\n", ptr, *ptr);
+}
+
+//////////////////////////////////// 6 /////////////////////////////////////////////////////////////////////////
+
+A saída será:
+7 9 -1 7 -1 9
+6 18 -1 6 -1 18
+
+//////////////////////////////////// 7 ////////////////////////////////////////////////////////////////////////
+
+
+A saida será: 4094 - 7 - 15

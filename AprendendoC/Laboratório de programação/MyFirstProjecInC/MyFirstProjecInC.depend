@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1675969386 source:e:\cadeira de férias\laboratório de programação\myfirstprojecinc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+
+1674758698 source:e:\cadeira de férias\laboratório de programação\myfirstprojecinc\secondfile.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<string.h>
+
+1675199124 source:e:\cadeira de férias\laboratório de programação\lista de exercícios\primeira questão.c
+	<stdio.h>
+	<stdlib.h>
+
