@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Meu HTML</title>
+        <style>
+            .backgray{
+                background:gray;
+            }
+            .greenwrite{
+                color: green;
+            }
+            .boldred{
+                color: red;
+            }
+            .boldblue{
+                color: blue;
+            }
+        </style>
+    </head>
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+    <body>
+        <h1 class="greenwrite">Meu HTML</h1><br>
+
+        <p class="backgray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat voluptatibus earum, nam ipsam, temporibus amet sit ipsa, corporis delectus atque velit sed possimus nesciunt aliquam aut. Porro perspiciatis dolorum velit!</p>
+
+        <span>Marcelo<br><b class="boldblue">Marcelo</b><br>Marcelo<br><b class="boldred">Marcelo</b></span>
+
+        <br>
+        <h2>subtítulo</h2>
+        <a href="https://www.youtube.com/" target="_blank"><img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="Logo do youtube" width="300" height="300"></a>
+        <br>
+
+        <p>Lorem ipsum <a href="https://www.youtube.com/" target="_blank">dolor</a> sit, amet consectetur adipisicing elit. Deleniti nam, excepturi vel, rerum modi tempora iusto ad vitae assumenda quasi tenetur ipsum nemo ipsa temporibus exercitationem recusandae distinctio natus! Eius.</p>
+        
+        <p>Esse <b>negrito</b> é com "b" de bold e esse <strong>NEGRITO</strong> é com "strong".</p>
+
+        <p>Essa <em>EMFASE</em> é com "em" de EMPHASYS e essa <i>emfase</i> é com "i" de Itálico.</p>
+
+        <p>Esse <del>TRACEJADO</del> é com "del" de delet e esse <s>tracejado</s> é com "s" de scrached.</p>
+
+        <p>Esse <ins>SUBLINHADO</ins> é com "ins" de insert e esse <u>sublinhado</u> é com "u" de underscore.</p>
+
+        <p>Com a tag "sup" 2^2 vira 2<sup>2</sup>.</p>
+
+        <p>E com a tag "sub" o H2O vira H<sub>2</sub>O.</p>
+
+        <p>Com a tag "q" de quote podemos adicionar aspas duplas (ou citação in line) como essa: <q cite="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/citacao#:~:text=Cita%C3%A7%C3%A3o%20%C3%A9%20o%20ato%20pelo,de%20improced%C3%AAncia%20liminar%20do%20pedido.">Citação é o ato pelo qual são convocados o réu, o executado ou o interessado para integrar a relação processual. Art. 239. Para a validade do processo é indispensável a citação do réu ou do executado, ressalvadas as hipóteses de indeferimento da petição inicial ou de improcedência liminar do pedido.
+        </q>.<br>Ainda podemos colocar o site de referência.</p>
+
+        <p>Além desse tipo de citação podemos fazer uma de forma mais padrão em bloco (fora do parágrafo) com a tag "blockquote":</p>
+        <blockquote cite="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/citacao#:~:text=Cita%C3%A7%C3%A3o%20%C3%A9%20o%20ato%20pelo,de%20improced%C3%AAncia%20liminar%20do%20pedido."><p>Citação é o ato pelo qual são convocados o réu, o executado ou o interessado para integrar a relação processual. Art. 239. Para a validade do processo é indispensável a citação do réu ou do executado, ressalvadas as hipóteses de indeferimento da petição inicial ou de improcedência liminar do pedido.</p></blockquote>
+
+        <p>Além disso podemos fazer post com códigos <code>Alterando a fonte para mono espaçada</code> com a tag "code" e mantendo os espaçamentos com a tag "pre". Exemplo:</p>
+
+        <pre><code>
+        "p"Além disso podemos fazer post com códigos "code"Alterando a fonte para mono espaçada"code" com a tag "code" e mantendo os espaçamentos com a tag "pre". Exemplo: "p"
+
+        "pre" "code"
+            "style"
+                .backgray{
+                    background:gray;
+                }
+                .greenwrite{
+                    color: green;
+                }
+                .boldred{
+                    color: red;
+                }
+                .boldblue{
+                    color: blue;
+                }
+            "style"
+        "code" "pre"
+        (Os <> foram alteradas para "" para não confundir o código.)
+        </code></pre>
+
+        <p>Existem tags de container genérico sem semantica para conter textos de forma Inline ("spam") e Inblock ("div"): <spam>Spam in line</spam></p>
+
+        <div style="width: 120px; height: 120px; background: red;">
+            <div style="width: 60px; height: 60px; background: blue; float: left;"></div>
+            <div style="width: 60px; height: 60px; background: green; float: left;"></div>
+            <div style="width: 60px; height: 60px; background: gray; float: left;"></div>
+        </div>
+        
+    </body>
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+</html>

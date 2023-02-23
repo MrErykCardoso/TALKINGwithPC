@@ -1,0 +1,110 @@
+#include <stdio.h>;
+#include <string.h>;
+#include <stdlib.h>;
+#include <math.h>;
+
+int main(){
+    system("MODE con cols= lines= ");
+    system("title ");
+
+    //Variáveis main:
+    char end='s';
+
+    //Estrutura de repetição principal:
+    while(end=='s'){
+        //Variáveis internas:
+        int choise;
+
+        //Boas vindas:
+        printf("Bem vindo!\n\n");
+        printf("ATENCAO: Para um funcionamento previsivel do programa reproduza fialmene as opcoes sugeridas.\n\n");
+
+
+        //Enunciado:
+        printf("\n\nEscolha a questao que voce gostaria de avaliar (reproduza apenas o numero): \n\n");
+        printf(" 1.      2.      3.       4.       5.   \n");
+        printf(" 6.      7.      8.       9.      10.   \n");
+        printf("11.     12.     13.      14.          \n\n");
+        printf("Sua opcao aqui: ");
+        scanf("%d",&choise);
+
+        switch(choise){
+            case 1:
+                system("cls");
+
+                break;
+            case 2:
+                system("cls");
+
+                break;                
+            case 3:
+                system("cls");
+
+                break;
+            case 4:
+                system("cls");
+
+                break;
+            case 5:
+                system("cls");
+
+                break;
+            case 6:
+                system("cls");
+
+                break;
+            case 7:
+                system("cls");
+
+                break;
+            case 8:
+                system("cls");
+
+                break;
+            case 9:
+                system("cls");
+
+                break;
+            case 10:
+                system("cls");
+
+                break;
+            case 11:
+                system("cls");
+
+                break;
+            case 12:
+                system("cls");
+
+                break;
+            case 13:
+                system("cls");
+
+                break;
+            case 14:
+                system("cls");
+
+                break;
+            default:
+                system("cls");
+                printf("\nOpcao invalida!\nReproduza no formato indicado.\n\n");
+        }
+
+        do{
+            printf("\n\nDeseja novamente? (s ou n): ");
+            scanf("%s",&end);
+            system("cls");
+            if(end=='n'){
+                system("cls");
+                printf("\nAte mais! :)/ \n\n");
+                exit(0);
+            }
+            else if(end!='s'){
+                printf("\nOpcao invalida!\nReproduza no formato indicado.\n\n");
+            }
+
+        }while(end!='s' && end!='n');
+    }
+
+    return 0;
+}
