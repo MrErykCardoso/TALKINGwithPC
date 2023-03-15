@@ -124,10 +124,15 @@
                 color: black;
             }
             .tabroll {
-                max-width: 100%;
+                max-width: 30%;
                 overflow-x: auto;
             }
-
+            .form{
+                color: black;
+            }
+            .formlabel{
+                cursor: pointer;
+            }
         </style>
     </head>
 <!--//////////////////////////////////////////////////////////////////////////////////-->
@@ -258,6 +263,87 @@
                 </tfoot>
             </table>
         </div>
+
+        <hr>
+        <section class="tabroll">
+            <form action="#" method="get" target="_blank" autocomplete="off">
+                <h1>Cabeça</h1>
+                <p>O formulário</p>
+                <fieldset>
+                    <legend>Descrição</legend>
+                    <p>
+                        <input style="width: 100%" class="form" type="text" placeholder="Digite um texto qualquer">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <section class="tabroll">
+            <form action="#" method="get" target="_blank" autocomplet="off">
+                <p>Meu formulário</p>
+                <p>
+                    <label class="formlabel" for="nome">Nome:</label><br>
+                    <input style="width: 100%" type="text" id="nome" class="form" name="nome" placeholder="Digite seu nome">
+                </p>
+                <p>
+                    <label for="dev">Sou um dev </label>
+                    <input type="checkbox" id="dev" name="dev" value="true">
+                </p>
+                <p>
+                    <label for="HomeOffice">Disponibilidade HomeOffice </label>
+                    <input type="checkbox" id="HomeOffice" name="HomeOffice" value="true">
+                </p>
+                <p>
+                    <label for="iniciante">É iniciante </label>
+                    <input type="checkbox" id="iniciante" name="iniciante" value="true">
+                </p>
+                <p>
+                    Gênero:
+                    <br>
+                    <label class="formlabel" for="masculino">Masculino </label>
+                    <input type="radio" id="masculino" name="Gênero" value="masculino">
+                    <br>
+                    <label class="formlabel" for="feminino">Feminino </label>
+                    <input type="radio" id="feminino" name="Gênero" value="feminino">
+                    <br>
+                    <label class="formlabel" for="outro">Outro </label>
+                    <input type="radio" id="outro" name="Gênero" value="outro">
+                </p>
+                <p>
+                    <label class="formlabel" for="date">Data: </label>
+                    <input type="date" class="form" id="date" name="date" value="">
+                </p>
+                <p>
+                    <label class="formlabel" for="datetime">Data e hora: </label>
+                    <input type="datetime-local" class="form" id="datetime" name="datetime" value="">
+                </p>
+                <p>
+                    <label class="formlabel" for="time">Horas: </label>
+                    <input type="time" class="form" id="time" name="time" value="">
+                </p>
+                <p>
+                    <label class="formlabel" for="color">Cor favorita: </label>
+                    <input type="color" id="color" name="favcolor" value="#fff">
+                </p>
+                <p>
+                    <label class="formlabel" for="email">Seu email: </label>
+                    <input type="email" class="form" id="email" name="email" placeholder="email@domain.com">
+                </p>
+                <p>
+                    <label class="formlabel" for="file">Mande seu curriculo: </label>
+                    <input type="file" class="form" style="border: 5px solid green; background: white; width:100%;" id="file" name="curriculo" accept="file/*" multiple>
+                </p>
+                <p>
+                    <label class="formlabel" for="number">Quantos projetos de treino concluiu (min 3, max 10): </label>
+                    <input type="number" class="form" id="number" name="nproj" min="3" max="10" step="1">
+                    <br>Mande-os junto com arquivos acima.
+                </p>
+                <p>
+                    <button class="form" type="reset">Restaurar</button>
+                    <button class="form" type="submit">Enviar</button>
+                </p>
+            </form>
+        </section>
     </body>
 <!--//////////////////////////////////////////////////////////////////////////////////-->
 </html>
