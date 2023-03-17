@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>Meu HTML</title>
+        <link rel="stylesheet" href="./assets/CSS/styles.css">
+    </head>
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+    <body class="body">
+        <nav>
+            <ul>
+                <li><img style="border: 2px solid black; margin-right: 30px;" src="https://pbs.twimg.com/media/DMG310gW0AUcVfO.jpg" alt="Pikachu e aquela carinha" width="30px"></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+        <header>
+            <a href="RandUdemy.html"><h1 class="greenwrite">Meu HTML</h1></a>
+            <a href="https://www.youtube.com/watch?v=uDMi-NQ7euU" target="_blank"><img src="https://pbs.twimg.com/media/DMG310gW0AUcVfO.jpg" alt="Pikachu e aquela carinha" height="100px"></a>         
+            <p class="backgray">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat voluptatibus earum nam!</p>
+        </header>
+        <br>
+        <h2>subtítulo</h2>
+        <a href="https://www.youtube.com/watch?v=0ietar3cjzo" target="_blank"><img src="https://www.youtube.com/img/desktop/yt_1200.png" alt="Logo do youtube" width="300" height="300"></a>
+        <br>
+
+        <p>Lorem ipsum <a href="https://www.youtube.com/" target="_blank">dolor</a> sit, amet consectetur adipisicing elit. Deleniti nam, excepturi vel, rerum modi tempora iusto ad vitae assumenda quasi tenetur ipsum nemo ipsa temporibus exercitationem recusandae distinctio natus! Eius.</p>
+        
+        <p>Esse <b>negrito</b> é com "b" de bold e esse <strong>NEGRITO</strong> é com "strong".</p>
+
+        <p>Essa <em>EMFASE</em> é com "em" de EMPHASYS e essa <i>emfase</i> é com "i" de Itálico.</p>
+
+        <p>Esse <del>TRACEJADO</del> é com "del" de delet e esse <s>tracejado</s> é com "s" de scrached.</p>
+
+        <p>Esse <ins>SUBLINHADO</ins> é com "ins" de insert e esse <u>sublinhado</u> é com "u" de underscore.</p>
+
+        <p>Com a tag "sup" 2^2 vira 2<sup>2</sup>.</p>
+
+        <p>E com a tag "sub" o H2O vira H<sub>2</sub>O.</p>
+
+        <p>Com a tag "q" de quote podemos adicionar aspas duplas (ou citação in line) como essa: <q cite="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/citacao#:~:text=Cita%C3%A7%C3%A3o%20%C3%A9%20o%20ato%20pelo,de%20improced%C3%AAncia%20liminar%20do%20pedido.">Citação é o ato pelo qual são convocados o réu, o executado ou o interessado para integrar a relação processual. Art. 239. Para a validade do processo é indispensável a citação do réu ou do executado, ressalvadas as hipóteses de indeferimento da petição inicial ou de improcedência liminar do pedido.
+        </q>.<br>Ainda podemos colocar o site de referência.</p>
+
+        <p>Além desse tipo de citação podemos fazer uma de forma mais padrão em bloco (fora do parágrafo) com a tag "blockquote":</p>
+        <blockquote cite="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/citacao#:~:text=Cita%C3%A7%C3%A3o%20%C3%A9%20o%20ato%20pelo,de%20improced%C3%AAncia%20liminar%20do%20pedido."><p>Citação é o ato pelo qual são convocados o réu, o executado ou o interessado para integrar a relação processual. Art. 239. Para a validade do processo é indispensável a citação do réu ou do executado, ressalvadas as hipóteses de indeferimento da petição inicial ou de improcedência liminar do pedido.</p></blockquote>
+
+        <p>Além disso podemos fazer post com códigos <code>Alterando a fonte para mono espaçada</code> com a tag "code" e mantendo os espaçamentos com a tag "pre". Exemplo:</p>
+
+        <pre><code>
+        "p"Além disso podemos fazer post com códigos "code"Alterando a fonte para mono espaçada"code" com a tag "code" e mantendo os espaçamentos com a tag "pre". Exemplo: "p"
+
+        "pre" "code"
+            "style"
+                .backgray{
+                    background:gray;
+                }
+                .greenwrite{
+                    color: green;
+                }
+                .boldred{
+                    color: red;
+                }
+                .boldblue{
+                    color: blue;
+                }
+            "style"
+        "code" "pre"
+        (Os maior que menor que foram alteradas para "" para não confundir o código.)
+        </code></pre>
+
+        <p>Existem tags de container genérico sem semantica para conter textos de forma Inline ("spam") e Inblock ("div"): <spam>Spam in line</spam></p>
+
+        <div style="width: 120px; height: 120px; background: red;">
+            <div style="width: 60px; height: 60px; background: blue; float: left;">
+                <div style="width: 30px; height: 30px; background: pink; float: left;"></div>
+                <div style="width: 30px; height: 30px; background: deeppink; float: left;"></div>
+                <div style="width: 30px; height: 30px; background: turquoise; float: left;"></div>
+            </div>
+            <div style="width: 60px; height: 60px; background: green; float: left;">
+                <div style="width: 30px; height: 30px; background: pink; float: left;"></div>
+                <div style="width: 30px; height: 30px; background: deeppink; float: left;"></div>
+                <div style="width: 30px; height: 30px; background: turquoise; float: left;"></div>
+            </div>
+            <div style="width: 60px; height: 60px; background: gray; float: left;">
+                <div style="width: 30px; height: 30px; background: pink; float: left;"></div>
+                <div style="width: 30px; height: 30px; background: deeppink; float: left;"></div>
+                <div style="width: 30px; height: 30px; background: turquoise; float: left;"></div>
+            </div>
+            <div style="width: 30px; height: 30px; background: pink; float: left;"></div>
+            <div style="width: 30px; height: 30px; background: deeppink; float: left;"></div>
+            <div style="width: 30px; height: 30px; background: turquoise; float: left;"></div>
+        </div>
+        <br>
+        <br>
+        <div style="display: flex;">
+            <section class="section-one">Lorem ipsum dolor sit amet consectetur adipisicing elit.</section>
+            <section class="section-two">vai tomar<br>na sua c*</section>
+        </div>
+        
+        <div class="tabroll">
+            <table>
+                <caption>Este aqui é um modelo de tabela que pode ser exibido no site:</caption>
+                <thead>
+                    <tr>
+                        <th>Título 1</th>
+                        <th>Título 2</th>
+                        <th>Título 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Corpo 1</td>
+                        <td>Corpo 2</td>
+                        <td>Corpo 3</td>
+                    </tr>
+                    <tr>
+                        <td>Corpo 1</td>
+                        <td>Corpo 2</td>
+                        <td>Corpo 3</td>
+                    </tr>
+                    <tr>
+                        <td>Corpo 1</td>
+                        <td>Corpo 2</td>
+                        <td>Corpo 3</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2"></th>
+                        <th>Total: 000R$</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <hr>
+        <section class="tabroll">
+            <form action="#" method="get" target="_blank" autocomplete="off">
+                <h1>Cabeça</h1>
+                <p>O formulário</p>
+                <fieldset>
+                    <legend>Descrição</legend>
+                    <p>
+                        <input style="width: 100%" class="form" type="text" placeholder="Digite um texto qualquer">
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+        <section class="tabroll">
+            <form action="#" method="get" target="_blank" autocomplet="off">
+                <p>Meu formulário</p>
+                <p>
+                    <label class="formlabel" for="nome">Nome:</label><br>
+                    <input style="width: 100%" type="text" id="nome" class="form" name="nome" placeholder="Digite seu nome">
+                </p>
+                <p>
+                    <label for="dev">Sou um dev </label>
+                    <input type="checkbox" id="dev" name="dev" value="true">
+                </p>
+                <p>
+                    <label for="HomeOffice">Disponibilidade HomeOffice </label>
+                    <input type="checkbox" id="HomeOffice" name="HomeOffice" value="true">
+                </p>
+                <p>
+                    <label for="iniciante">É iniciante </label>
+                    <input type="checkbox" id="iniciante" name="iniciante" value="true">
+                </p>
+                <p>
+                    Gênero:
+                    <br>
+                    <label class="formlabel" for="masculino">Masculino </label>
+                    <input type="radio" id="masculino" name="Gênero" value="masculino">
+                    <br>
+                    <label class="formlabel" for="feminino">Feminino </label>
+                    <input type="radio" id="feminino" name="Gênero" value="feminino">
+                    <br>
+                    <label class="formlabel" for="outro">Outro </label>
+                    <input type="radio" id="outro" name="Gênero" value="outro">
+                </p>
+                <p>
+                    <label class="formlabel" for="date">Data: </label>
+                    <input type="date" class="form" id="date" name="date" value="">
+                </p>
+                <p>
+                    <label class="formlabel" for="datetime">Data e hora: </label>
+                    <input type="datetime-local" class="form" id="datetime" name="datetime" value="">
+                </p>
+                <p>
+                    <label class="formlabel" for="time">Horas: </label>
+                    <input type="time" class="form" id="time" name="time" value="">
+                </p>
+                <p>
+                    <label class="formlabel" for="color">Cor favorita: </label>
+                    <input type="color" id="color" name="favcolor" value="#fff">
+                </p>
+                <p>
+                    <label class="formlabel" for="email">Seu email: </label>
+                    <input type="email" class="form" id="email" name="email" placeholder="email@domain.com">
+                </p>
+                <p>
+                    <label class="formlabel" for="file">Mande seu curriculo: </label>
+                    <input type="file" class="form" style="border: 5px solid green; background: white; width:100%;" id="file" name="curriculo" accept="file/*" multiple>
+                </p>
+                <p>
+                    <label class="formlabel" for="number">Quantos projetos de treino concluiu (min 3, max 10): </label>
+                    <input type="number" class="form" id="number" name="nproj" min="3" max="10" step="1">
+                    <br>Mande-os junto com arquivos acima.
+                </p>
+                <p>
+                    <label class="formlabel" for="password">Senha: </label>
+                    <input type="password" class="form" id="password" name="senha" placeholder="Insira sua senha...">
+                </p>
+                <p>
+                    <label class="formlabel" for="range">Range: </label>
+                    <input type="range" class="form" id="range" name="range" min="0" max="1500">
+                </p>
+                <p>
+                    <label class="formlabel" for="url">URL: </label>
+                    <input type="url" class="form" id="url" name="url" placeholder="Insira sua URL...">
+                </p>
+                <p>
+                    <label class="formlabel" for="search">Pesquisa: </label>
+                    <input type="search" class="form" id="search" name="search" placeholder="Sua pesquisa...">
+                </p>
+                <p>
+                    <label class="formlabel" for="select">Selecione uma opção: </label>
+                    <select class="form" id="select" name="selection">
+                        <optgroup class="form" label="group 1">
+                            <option class="form" value="1" label="value 1" selected>
+                            <option class="form" value="2" label="value 2" disabled>
+                            <option class="form" value="3" label="value 3">
+                            <option class="form" value="4" label="value 4">
+                        </optgroup>
+                        <optgroup class="form" label="group 2">
+                            <option class="form" value="5" label="value 5">
+                            <option class="form" value="6" label="value 6">
+                            <option class="form" value="7" label="value 7">
+                            <option class="form" value="8" label="value 8">
+                        </optgroup>
+                    </select>
+                </p>
+                <p>
+                    <label class="formlabel" for="textbox">Comentário adicionais: </label>
+                    <textarea class="form" id="textbox" name="textarea" rows="10" cols="100" placeholder="Comentários adicionais..."></textarea>
+                </p>
+                <p>
+                    <button class="form" type="reset">Restaurar</button>
+                    <button class="form" type="submit">Enviar</button>
+                </p>
+            </form>
+        </section>
+    </body>
+<!--//////////////////////////////////////////////////////////////////////////////////-->
+</html>
