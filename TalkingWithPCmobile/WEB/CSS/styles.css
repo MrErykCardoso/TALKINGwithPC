@@ -10,6 +10,44 @@ body p{
 main {
     padding: 1%;
 }
+div {
+    margin-left: 20px;
+    color: initial;
+}
+a {
+    color: black;
+    text-decoration: solid black underline;
+}
+a:active {
+    color:red;
+    text-decoration:solid red underline;
+}
+#linktest a:hover {
+    transition: all 300ms ease-in-out;
+}
+a:visited:hover {
+    background: darkred;
+}
+a:hover {
+    background: red;
+    color: white;
+    border-radius: 5px;
+    padding: 0.8px;
+    text-decoration: solid white underline;
+}
+input{
+    background: rgba(255,0,0,0.3);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input:hover, input:focus{
+    box-shadow: 0 0 5px rgba(0,0,0,1);
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 500px;
+}
+/*///////////////////////////////////navegação//////////////////////////////////////////////*/
 nav {
     background:red;
 }
@@ -48,10 +86,26 @@ body main div section p {
     background: lightgrey;
     padding: 0 10px 10px 10px;
 }
+/*///////////////////////////////////////Hereditariedade/////////////////////////////////////////////*/
 div.ln {
+    padding: 10px;
     color: red;
     border: 10px dotted black;
 }
-p {
-    color: inherit;
+#titulo {
+    color: initial;
 }
+.pai {
+    color: initial;
+}
+.pai>.filho {
+    color: green;
+}
+/* //////////////////////////////////////seletores/////////////////////////////////////////////////// */
+div.til h1~p {
+    color: #f00;
+}
+div.til h1+p {
+    color: #00f;
+}
+
