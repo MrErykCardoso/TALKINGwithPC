@@ -1,2 +1,2 @@
 # TALKINGwithPC
-A repository for my all learnig code experiences.
+A repository for my all first learning code experiences.
